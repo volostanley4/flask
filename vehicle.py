@@ -25,10 +25,10 @@ class Vehicle:
         print(f"year = {self.year}")
 
     def start(self):
-        print(f"{self.brand} {self.brand} has started")
+        print(f"{self.brand} {self.model} has started")
 
     def stop(self):
-        print(f"{self.brand} {self.brand} has stopped")
+        print(f"{self.brand} {self.model} has stopped")
 
 class Car(Vehicle):
     def __init__(self,brand,model,year,number_of_doors):
