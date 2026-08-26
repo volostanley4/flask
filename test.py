@@ -1,14 +1,20 @@
+from datetime import datetime
+today = datetime.today()
+print(today)
+
 class Bank_Account:
-    def __init__(self, account_number, balance, owner_name, date_opened):
+    def __init__(self, account_number, balance, owner_name, date_opened = today):
         self.account_number = account_number
         self.balance = balance
         self.owner_name = owner_name
         self.date_opened = date_opened
         
     def deposit(self,amount):
-        self.balance += amount
-        print(f"Ksh{amount} depossited successfully")
-    
+        if amount >0:
+            self.balance += amount
+            print(f"Ksh{amount} deposited successfully to account:{self.account_number}\n New balance is {self.balance}")
+        else:
+            print("please try depositing again")
     def withdraw(self,amount):
         if amount <= self.balance:
             self.balance -= amount

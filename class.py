@@ -31,3 +31,21 @@ print(type(person2.name))
 person2.display_info()
 person2.talks("python is hard")
 person2.eats("ugali and fish for supper")
+
+
+# inheritance
+class Animal:
+    def __init__(self,name,type):
+        self.name = name
+        self.type = type
+        
+    def make_sound(self):
+        print(f"{self.name} makes some sound")
+        
+    def Dog(Animal):
+        def __init__(self,name,type,age):
+            super().__init__(name,type)
+            self.age = age
+
+dog1 = Dog("Max","German Shephard",5)
+print()
