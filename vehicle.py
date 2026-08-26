@@ -1,3 +1,17 @@
+# Create a small vehicle management system using inheritance. Start by creating a parent class called Vehicle. The Vehicle class should have three attributes: brand, model, and year. It should have a display_info() method that prints the vehicle's basic information. Add a start() method that prints a simple message saying the vehicle has started, and a stop() method that prints a simple message saying the vehicle has stopped.
+
+# Next, create a child class called Car that inherits from Vehicle. A Car should have an additional attribute called number_of_doors. Add a simple drive() method that prints a message saying the car is driving. Override the display_info() method so that it also displays the number of doors. Inside the overridden method, use super() to call the parent's display_info() method.
+
+# Then create another child class called Motorcycle that also inherits from Vehicle. A Motorcycle should have an additional attribute called engine_cc, representing the engine size. Add a simple ride() method that prints a message saying the motorcycle is being ridden. Override display_info() so that it also displays the engine size. Again, use super() to call the parent's display_info() method.
+
+# Your class structure should look like this:
+
+# Vehicle ├── Car └── Motorcycle
+
+# The Vehicle class should have start(), stop(), and display_info() methods. The Car should have a drive() method, while the Motorcycle should have a ride() method. Both child classes should override display_info() and use super().
+
+# Finally, create one Car and one Motorcycle and test their methods
+
 class Vehicle:
     def __init__(self,brand,model,year):
         self.brand = brand
