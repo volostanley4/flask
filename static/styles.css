@@ -1,0 +1,199 @@
+/* ================= HERO SECTION ================= */
+
+.hero-section {
+    min-height: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    background: #f7fbf7;
+    overflow: hidden;
+}
+
+.up {
+    display: flex;
+    justify-content: center;
+}
+
+.top {
+    padding-left: 20px;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 17px 30px;
+    background: #078548;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.cta image {
+    width: 100px;
+    height: 100px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.card1 {
+    background-color: rgb(169, 230, 169) ;
+    border: 1% solid black;
+    border-radius: 5px;
+    color: black;
+}
+
+.card2 {
+    background-color: rgb(169, 230, 169);
+    border: 1% solid black;
+    border-radius: 5px;
+    color: black;
+}
+
+.card3 {
+    background-color: rgb(169, 230, 169);
+    border: 1% solid black;
+    border-radius: 5px;
+    color: black;
+}
+
+.card4 {
+    background-color:rgb(169, 230, 169) ;
+    border: 1% solid black;
+    border-radius: 5px;
+    color: black;
+}
+
+
+footer {
+        background: #198754;
+        color: white;
+        padding: 40px 0 20px;
+        height: 100%;
+    }
+
+    .footer-logo {
+        color: black;
+        font-weight: bold;
+    }
+
+    .social-icons a {
+        color: white;
+        font-size: 1.5rem;
+        margin-right: 15px;
+        transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+        color: #078548;
+    }
+
+    .auth-form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .auth-form label {
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 8px;
+    }
+
+    .auth-form input {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        outline: none;
+        transition: 0.3s;
+    }
+
+    .auth-form input:focus {
+        border-color: #078548;
+        box-shadow:
+            0 0 0 3px rgba(255, 79, 139, 0.1);
+    }
+
+
+    /* Submit Button */
+    .auth-submit-btn {
+        background: #078548;
+        color: white;
+        border: none;
+        padding: 13px;
+        border-radius: 30px;
+        margin-top: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .auth-submit-btn:hover {
+        background: #078548;
+    }
+
+
+    /* Forgot Password */
+    .forgot-password {
+        text-align: right;
+        margin-top: 10px;
+    }
+
+    .forgot-password a {
+        color: #078548;
+        font-size: 13px;
+        text-decoration: none;
+    }
+
+
+    /* Footer Text */
+    .auth-footer-text {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 14px;
+        color: #777;
+    }
+
+    .auth-footer-text a {
+        color: #078548;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .main{
+        margin-bottom: 100px;
+        margin-left: 300px;
+        margin-right: 300px;
+        background-color: rgb(169, 230, 169) ;
+        border: 30% solid black;
+        border-radius: 10px;
+        color: black;
+    }
+
+    .main2 {
+        margin-bottom: 100px;
+        margin-left: 300px;
+        margin-right: 300px;
+        background-color: rgb(169, 230, 169) ;
+        border: 30% solid black;
+        border-radius: 10px;
+        color: black;
+    }
+
+    .inputs {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .inputs2 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }

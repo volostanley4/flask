@@ -42,10 +42,14 @@ class Animal:
     def make_sound(self):
         print(f"{self.name} makes some sound")
         
-    def Dog(Animal):
+class Dog(Animal):
         def __init__(self,name,type,age):
             super().__init__(name,type)
             self.age = age
 
+        def make_sound(self):
+            print(f"{self.name} says woof!")
+
 dog1 = Dog("Max","German Shephard",5)
-print()
+print(dog1.name)
+dog1.make_sound()

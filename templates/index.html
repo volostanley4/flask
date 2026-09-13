@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock %}
+{% block content %}
+<div>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div>
+            <div class="up">
+                <div class="top">
+                    <h1>Welcome to <br>
+                    <span style="color: #198754;">MY DUKA</span>
+                    </h1>
+                    <p>Your one-stop shop for quality products at the best prices. Shop drom the comfort of tour home and enjoy a seamless experience.</p>
+
+                    <div class="button">
+                        <a href="/products" class="cta-button">Start Shopping Now<span>→</span></a>
+                    </div>
+                </div>
+
+                <div class="cta image">
+                    <img src="{{ url_for('static', filename='cta image.png') }}" alt="Company Logo" style="height: 300px; width: 600px;">
+                </div>
+
+            </div>
+            <br>
+
+            <div class="container-fluid">
+                <div class="cards">
+                    <div class="card1">
+                        <h6 style="text-align: center;">Quality Products</h6>
+                        <p>Get the best quality products always.</p>
+                    </div>
+                    <div class="card2">
+                        <h6 style="text-align: center;">Affordable Prices</h6>
+                        <p>Great deals that fit in your budget.</p>
+                    </div>
+                    <div class="card3">
+                        <h6 style="text-align: center;">Fast $ Reliable Delivery</h6>
+                        <p>Great deals that fit in your budget.</p>
+                    </div>
+                    <div class="card4">
+                        <h6 style="text-align: center;">Secure Shopping</h6>
+                        <p>Shop with confidence and peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div><br>
+{% endblock %}
