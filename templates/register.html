@@ -6,31 +6,23 @@
 <p style="text-align: center;">Register your Duka Account</p>
 <div class="main">
     <div class="tab-pane fade show active" id="register">
-        <form class="auth-form">
+        <form class="auth-form" action="/register" method="post">
             <div class="inputs">
-                <label>
-                    Full Name
-                </label>
-                <input type="text" placeholder="Enter your full name" required style="border-radius: 30px;">
+                <label>Full Name</label>
+                <input type="text" name="full_name" placeholder="Enter your full name" required style="border-radius: 30px;">
 
-                <label>
-                    Phone Number
-                </label>
-                <input type="tel" placeholder="+254 7XX XXX XXX" required style="border-radius: 30px;">
+                <label>Phone Number</label>
+                <input type="tel" name="phone" placeholder="+254 7XX XXX XXX" required style="border-radius: 30px;">
 
-                <label>
-                    Email Address
-                </label>
-                <input type="email" placeholder="Enter your email" required style="border-radius: 30px;">
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="Enter your email" required style="border-radius: 30px;">
 
-                <label>
-                    Password
-                </label>
-                <input type="password" placeholder="Create a password" required style="border-radius: 30px;">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Create a password" required style="border-radius: 30px;">
             </div>
 
                 <button type="submit" class="auth-submit-btn">
-                    Create Account
+                    Create User
                 </button>
 
             <p class="auth-footer-text">

@@ -101,3 +101,23 @@ def insert_stock(stock_values):
 # get_sales_per_product = get_sales_per_product()
 # print(get_sales_per_product)
 
+def available_stock(pid):
+    cur.execute("select sum(stock.stock_quantity) from stock where pid = %s",(pid,))
+    total_stock = cur.fetchone()[0] or 0
+
+    cur.execute("select sum(sales.quantity) from sales where pid = %s",(pid,))
+    total_sold = cur.fetchone()[0] or 0
+
+    return total_stock - total_sold
+
+check_stock  = available_stock(1)
+print(check_stock)
+
+def check_user_exists(email):
+    cur.execute("select * from users where users.email = %s",(email,))
+    user = cur.fetchone()
+    return user
+
+def insert_user(user_details):
+    cur.execute("insert into users(full_name,email,phone_number,password)values(%s,%s,%s,%s)",user_details)
+    conn.commit()
